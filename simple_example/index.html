@@ -1,0 +1,106 @@
+<!doctype html>
+<head>
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+</style>
+
+
+
+</head>
+<body>
+  <!-- Declarative Rendering -->
+  <!-- 
+  <h2>Declarative Rendering</h2>
+  <div id="app">
+    {{ message }}
+  </div>
+  
+  <h2>Directive</h2>
+  <div id="app-2">
+    <span v-bind:title="message">
+      Hover your mouse over me for a few seconds
+      to see my dynamically bound title!
+    </span>
+  </div>
+  
+  <h2>Conditional</h2>
+  <div id="app-3">
+    <p v-if="seen">Now you see me</p>
+  </div>
+  
+  <h2>For loop</h2>
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+  
+  <h2>User Input</h2>
+  <div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+  </div>
+  
+  <h2>Two-way binding</h2>
+  <div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+  </div>
+  
+  <h2>Components</h2>
+  <div id="app-7">
+    <ol>
+      <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+    </ol>
+  </div>
+  
+
+   <div id="app-8">
+     <select v-model="selected">
+      <option v-for="option in options" v-bind:value="option.value">
+        {{ option.text }}
+      </option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+  </div>
+
+   <h2>Components</h2>
+   <div id="example">
+    <my-component></my-component>
+  </div>
+
+
+  <h2>Transition</h2>
+  <div id="demo">
+    <button v-on:click="show = !show">
+      Toggle
+    </button>
+    <transition name="fade">
+      <p v-if="show">hello</p>
+    </transition>
+  </div>
+ -->
+ 
+ 
+  <div id="app">
+    {{appName}}
+    <ul>
+      <li v-for="itm in items">{{itm.Name}}  {{itm.Year}}</li>
+    </ul>
+    
+   <!--   <div v-on:click="add">Add an item</div>-->
+    
+    </div>
+
+  <script src="http://cdn.nga.mil/libs/jQuery/versions/3.1.0/jquery.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
